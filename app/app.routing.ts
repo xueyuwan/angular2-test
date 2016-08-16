@@ -2,20 +2,23 @@
 
 import { Routes, RouterModule } from '@angular/router';
 import {SignInComponent} from './parts/sign/sign-in/sign-in';
-import{PageComponent} from './page.component'
+import {PageComponent} from './page.component'
 
 const appRoutes: Routes = [
   {
-    path:'',
-    redirectTo:"/sign-in",
-     pathMatch:"full",
-    
+    path: '',
+    redirectTo: "/sign-in",
+    pathMatch: "full",
+
   },
-  { path: 'sign-in', 
-  component:SignInComponent },
   {
-    path: '**', 
-    component:PageComponent
+    path: 'sign-in',
+    component: SignInComponent
+  },
+  {
+    path: ':path',
+    component: PageComponent,
+    pathMatch: "full",
 
   }
 ];

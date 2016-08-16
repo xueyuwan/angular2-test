@@ -8,11 +8,14 @@ var appRoutes = [
         redirectTo: "/sign-in",
         pathMatch: "full",
     },
-    { path: 'sign-in',
-        component: sign_in_1.SignInComponent },
     {
-        path: '**',
-        component: page_component_1.PageComponent
+        path: 'sign-in',
+        component: sign_in_1.SignInComponent
+    },
+    {
+        path: ':path',
+        component: page_component_1.PageComponent,
+        pathMatch: "full",
     }
 ];
 exports.appRoutingProviders = [];

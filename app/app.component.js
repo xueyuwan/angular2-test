@@ -12,12 +12,10 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
     }
-    AppComponent.prototype.ngOnInit = function () {
-    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <router-outlet> </router-outlet>\n    <my-nav></my-nav>\n    <banner></banner>\n    <show-case><show-case>\n    "
+            template: "\n    <router-outlet> </router-outlet>\n    <my-nav></my-nav>\n    \n     \n    \n      "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
