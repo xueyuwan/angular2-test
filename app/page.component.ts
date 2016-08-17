@@ -6,7 +6,6 @@ import {ActivatedRoute, Router} from '@angular/router';
     template: `
     <topTool></topTool>
     <my-nav></my-nav>
-
        <ul>
            <li *ngFor="let part of page.parts ">
                  <div [ngSwitch]="part.part">
@@ -15,12 +14,8 @@ import {ActivatedRoute, Router} from '@angular/router';
                  </div>
            </li>
        <ul>
-
-
-
     `
-
-
+    
 })
 
 

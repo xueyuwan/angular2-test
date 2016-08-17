@@ -1,0 +1,22 @@
+<div class="container">
+  <a class="btn btn-primary">网站设计</a>
+  <a class="btn btn-primary">网站惯例</a>
+  <a class="btn btn-primary">商务平台</a>
+  <a class="btn btn-primary">手机版</a>
+
+  <div class="pull-right">
+    <a class="btn btn-primary" (click)="saveWebsitData()">保存</a>
+    <a class="btn btn-danger">取消</a>
+    <a class="btn btn-primary" (click)="clearWebsitData()">清除缓存</a>
+  </div>
+  
+  <div (click)="$event.preventDefault()">
+        <p><i>Bootstrap 4 doesn't have justified classes</i></p>
+        <tabset [justified]="true">
+          <tab heading="Justified">Justified content</tab>
+          <tab heading="SJ">Short Labeled Justified content</tab>
+          <tab heading="Long Justified">Long Labeled Justified content</tab>
+        </tabset>
+  <div>
+
+</div>
