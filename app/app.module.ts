@@ -6,10 +6,10 @@ import {FormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {SignInComponent} from './parts/index';
 import {routing} from './app.routing';
-import {MyNavComponent,BannerComponent,ShowcaseComponent} from './parts/index';
+import {MyNavComponent,BannerComponent,ShowcaseComponent,topTool} from './parts/index';
 @NgModule({
     imports:[CommonModule,BrowserModule,FormsModule,routing],
-    declarations:[AppComponent,SignInComponent,MyNavComponent,BannerComponent,ShowcaseComponent],
+    declarations:[AppComponent,SignInComponent,MyNavComponent,BannerComponent,ShowcaseComponent,topTool],
     bootstrap:[AppComponent]
 })
 export class AppModule{}

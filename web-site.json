@@ -6,7 +6,10 @@
           "path":"index",
           "parts":[
               {
-                  "part":"Banner"
+                  "part":"Banner",
+                  "images":[
+                      "images/CMS_06.png","images/banner2.png"
+                  ]
               },
               {
                   "part":"ShowCase"
@@ -17,7 +20,10 @@
          "path":"about",
          "parts":[
              {
-                 "part":"Banner"
+                 "part":"Banner",
+                 "images":[
+                      "images/CMS_06.png","images/banner2.png"
+                  ]
              }
          ]
 

@@ -23,7 +23,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule, platform_browser_1.BrowserModule, forms_1.FormsModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, index_1.SignInComponent, index_2.MyNavComponent, index_2.BannerComponent, index_2.ShowcaseComponent],
+            declarations: [app_component_1.AppComponent, index_1.SignInComponent, index_2.MyNavComponent, index_2.BannerComponent, index_2.ShowcaseComponent, index_2.topTool],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

@@ -3,11 +3,14 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
    
     selector: 'page',
-    template: `this is componentpage
+    template: `
+    <topTool></topTool>
+    <my-nav></my-nav>
+
        <ul>
            <li *ngFor="let part of page.parts ">
                  <div [ngSwitch]="part.part">
-                    <banner *ngSwitchCase=" 'Banner' "></banner>
+                    <banner *ngSwitchCase=" 'Banner' " [banner]="part"></banner>
                     <show-case *ngSwitchCase=" 'ShowCase' "></show-case>
                  </div>
            </li>

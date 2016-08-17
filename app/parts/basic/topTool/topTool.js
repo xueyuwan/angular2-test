@@ -9,17 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var topTool = (function () {
+    function topTool() {
     }
-    AppComponent = __decorate([
+    topTool.prototype.saveWebsitData = function () {
+        localStorage.setItem('websiteData', JSON.stringify(window['websiteData']));
+    };
+    ;
+    topTool.prototype.clearWebsitData = function () {
+        localStorage.setItem('websiteData', '');
+    };
+    topTool = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n    <router-outlet> </router-outlet>\n\n      "
+            selector: 'topTool',
+            templateUrl: 'app/parts/basic/topTool/topTool.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], topTool);
+    return topTool;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.topTool = topTool;
+//# sourceMappingURL=topTool.js.map

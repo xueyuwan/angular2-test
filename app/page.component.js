@@ -27,7 +27,7 @@ var PageComponent = (function () {
     PageComponent = __decorate([
         core_1.Component({
             selector: 'page',
-            template: "this is componentpage\n       <ul>\n           <li *ngFor=\"let part of page.parts \">\n                 <div [ngSwitch]=\"part.part\">\n                    <banner *ngSwitchCase=\" 'Banner' \"></banner>\n                    <show-case *ngSwitchCase=\" 'ShowCase' \"></show-case>\n                 </div>\n           </li>\n       <ul>\n\n\n\n    "
+            template: "\n    <topTool></topTool>\n    <my-nav></my-nav>\n\n       <ul>\n           <li *ngFor=\"let part of page.parts \">\n                 <div [ngSwitch]=\"part.part\">\n                    <banner *ngSwitchCase=\" 'Banner' \" [banner]=\"part\"></banner>\n                    <show-case *ngSwitchCase=\" 'ShowCase' \"></show-case>\n                 </div>\n           </li>\n       <ul>\n\n\n\n    "
         }), 
         __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router])
     ], PageComponent);

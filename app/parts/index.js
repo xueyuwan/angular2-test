@@ -6,4 +6,5 @@ __export(require('./sign/sign-in/sign-in'));
 __export(require('./basic/my-nav/my-nav'));
 __export(require('./basic/banner/banner'));
 __export(require('./basic/show-case/show-case'));
+__export(require('./basic/topTool/topTool'));
 //# sourceMappingURL=index.js.map

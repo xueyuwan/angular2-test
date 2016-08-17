@@ -3,10 +3,7 @@ import {Component, OnInit} from '@angular/core';
     selector: 'my-app',
     template: `
     <router-outlet> </router-outlet>
-    <my-nav></my-nav>
-    
-     
-    
+
       `
 
 })

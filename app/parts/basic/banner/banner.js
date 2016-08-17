@@ -12,6 +12,12 @@ var core_1 = require('@angular/core');
 var BannerComponent = (function () {
     function BannerComponent() {
     }
+    BannerComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], BannerComponent.prototype, "banner", void 0);
     BannerComponent = __decorate([
         core_1.Component({
             selector: 'banner',
