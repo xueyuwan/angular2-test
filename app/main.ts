@@ -1,4 +1,4 @@
-//main.ts 启动应用程序``
+
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {AppModule} from './app.module';
 

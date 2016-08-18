@@ -16,7 +16,7 @@ import {AppService} from './app.service';
            </li>
        <ul>
     `
-    
+     // 拿取页面的组件
 })
 
 

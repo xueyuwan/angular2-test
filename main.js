@@ -1,5 +1,5 @@
 "use strict";
-//main.ts 启动应用程序
+//main.ts 启动应用程序,拿取数据
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 var app_module_1 = require('./app.module');
 window['$'].ajax({
