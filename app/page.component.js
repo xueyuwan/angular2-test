@@ -10,18 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var app_service_1 = require('./app.service');
 var PageComponent = (function () {
-    function PageComponent(route, router) {
+    function PageComponent(route, router, appService) {
         this.route = route;
         this.router = router;
+        this.appService = appService;
     }
     PageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.subscribe(function (params) {
             _this.path = params['path'];
             _this.page = window["pages"].find(function (page) { return _this.path == page.path; });
-            console.log(_this.path);
-            console.log(_this.page);
+            console.log('path' + _this.path);
+            console.log('page' + _this.page);
         });
     };
     PageComponent = __decorate([
@@ -29,7 +31,7 @@ var PageComponent = (function () {
             selector: 'page',
             template: "\n    <topTool></topTool>\n    <my-nav></my-nav>\n       <ul>\n           <li *ngFor=\"let part of page.parts \">\n                 <div [ngSwitch]=\"part.part\">\n                    <banner *ngSwitchCase=\" 'Banner' \" [banner]=\"part\"></banner>\n                    <show-case *ngSwitchCase=\" 'ShowCase' \"></show-case>\n                 </div>\n           </li>\n       <ul>\n    "
         }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router])
+        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, app_service_1.AppService])
     ], PageComponent);
     return PageComponent;
 }());

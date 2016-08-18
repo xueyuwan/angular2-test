@@ -17,6 +17,7 @@ var app_component_1 = require('./app.component');
 var index_1 = require('./parts/index');
 var app_routing_1 = require('./app.routing');
 var index_2 = require('./parts/index');
+var app_service_1 = require('./app.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,7 +25,8 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [common_1.CommonModule, platform_browser_1.BrowserModule, forms_1.FormsModule, app_routing_1.routing],
             declarations: [app_component_1.AppComponent, index_1.SignInComponent, index_2.MyNavComponent, index_2.BannerComponent, index_2.ShowcaseComponent, index_2.topTool],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent],
+            providers: [app_service_1.AppService, core_1.ViewContainerRef],
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

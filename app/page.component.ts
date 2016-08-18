@@ -1,5 +1,6 @@
-import {Component} from '@angular/core'
+import {Component,OnInit, OnChanges, OnDestroy} from '@angular/core'
 import {ActivatedRoute, Router} from '@angular/router';
+import {AppService} from './app.service';
 @Component({
    
     selector: 'page',
@@ -19,21 +20,22 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 
 
-export class PageComponent {
+export class PageComponent{
+
   path:string;
   page:any;
     constructor(
         private route: ActivatedRoute,
-        private router: Router
+        private router: Router,
+        private appService: AppService
     ) { }
-
 
     ngOnInit() {
         this.route.params.subscribe(params => {
             this.path = params['path'];
             this.page=window["pages"].find(page=>this.path==page.path);
-            console.log(this.path);
-            console.log(this.page)
+            console.log('path'+this.path);
+            console.log('page'+this.page)
         });
     }
 
